@@ -1,38 +1,51 @@
-.App {
+.app {
+  font-family: "Arial", sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 20px;
   min-height: 100vh;
+  background-image: url("https://wallpapers.com/images/hd/2012-avengers-logo-iadcar7ip678m0s1.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+}
+
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.compare-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.compare-button:hover {
+  background-color: #45a049;
+}
+
+.comparison-result {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
 }
